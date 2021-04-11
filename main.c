@@ -3,7 +3,7 @@
 char dizi[10] = {'0','1','2','3','4','5','6','7','8','9'};
 void board(){
 	system("cls");
-printf("\Tic Tac Toe\n");
+printf("Tic Tac Toe\n");
 printf("1.oyuncu-X      2.oyuncu-O\n");
 printf("---------------------\n");
 printf("|      |      |      |\n");
