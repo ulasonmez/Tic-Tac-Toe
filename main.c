@@ -61,38 +61,20 @@ int main(){
 		}
 		printf("%d. oyuncu sayiyi girsin",player);
 		scanf("%d",&c);
-	if(c==1 && dizi[1]=='1'){
-			dizi[1]=harf;
-		}
-		else if(c==2 && dizi[2]=='2'){
-			dizi[2]=harf;
-		}
-		else if(c==3 && dizi[3]=='3'){
-			dizi[3]=harf;
-		}
-		else if(c==4 && dizi[4]=='4'){
-			dizi[4]=harf;
-		}
-		else if(c==5 && dizi[5]=='5'){
-			dizi[5]=harf;
-		}
-		else if(c==6 && dizi[6]=='6'){
-			dizi[6]=harf;
-		}
-		else if(c==7 && dizi[7]=='7'){
-			dizi[7]=harf;
-		}
-		else if(c==8 && dizi[8]=='8'){
-			dizi[8]=harf;
-		}
-		else if(c==9 && dizi[9]=='9'){
-			dizi[9]=harf;
-		}
-		else{
-			printf("Hatali sayi girdiniz.");
+		int check=0;
+			for(int i = 1;i<=9;i++){
+			char value = i+'0';
+			if(c==i && dizi[i]==value){
+				dizi[i] = harf;
+				check = 1;
+				break;
+				}
+			}
+			if(check==0){
+				printf("Hatali sayi girdiniz.");
 			player--;
 			getch();
-		}
+				}
 	i = win();
 	player++;
 	}
